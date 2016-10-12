@@ -1,6 +1,6 @@
 The CriticalArc SDK is released under the following license:
  
-	Copyright (c) 2016 CRITICALARC Pty Ltd (ABN 69 154 820 603)
+	Copyright (c) 2016 CriticalArc Pty Ltd (ABN 69 154 820 603)
 
 	SDK LICENSE
 
