@@ -36,7 +36,7 @@ INSTALLATION AND USE RIGHTS.
     CriticalArc has included in the SDK, and provided that You may not distribute any copy You make of the SDK.
 3.  DISTRIBUTABLE CODE. Unless otherwise provided, if the SDK contains other CriticalArc programs, these license terms
     apply to your use of those programs. The SDK contains code in source and object form that you are permitted to
-	include in Authorized Applications if You comply with the terms below.
+    include in Authorized Applications if You comply with the terms below.
     a. Right to Use and Distribute. The code and text files listed below are "Distributable Code."
       1.) Sample Code. You may modify, copy, and distribute the source code form of code marked as "sample" in the SDK.
       2.) Redistribution. You may permit distributors of Your Authorized Applications to copy and distribute the
