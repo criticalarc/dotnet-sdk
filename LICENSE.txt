@@ -38,25 +38,25 @@ INSTALLATION AND USE RIGHTS.
     apply to your use of those programs. The SDK contains code in source and object form that you are permitted to
     include in Authorized Applications if You comply with the terms below.
     a. Right to Use and Distribute. The code and text files listed below are "Distributable Code."
-      1.) Sample Code. You may modify, copy, and distribute the source code form of code marked as "sample" in the SDK.
-      2.) Redistribution. You may permit distributors of Your Authorized Applications to copy and distribute the
-          Distributable Code as part of those applications.
+     1.) Sample Code. You may modify, copy, and distribute the source code form of code marked as "sample" in the SDK.
+     2.) Redistribution. You may permit distributors of Your Authorized Applications to copy and distribute the
+         Distributable Code as part of those applications.
     b. Distribution Requirements. For any Distributable Code that You distribute, You must
-      1.) require distributors and external end users to agree to terms that protect it at least as much as this license;
-          and
-      2.) indemnify, defend, and hold harmless CriticalArc from any claims, including attorneys’ fees, related to the
-           distribution or use of Your Authorized Applications.
+     1.) require distributors and external end users to agree to terms that protect it at least as much as this license;
+         and
+     2.) indemnify, defend, and hold harmless CriticalArc from any claims, including attorneys’ fees, related to the
+         distribution or use of Your Authorized Applications.
     c. Distribution Restrictions. You may not
-      1.) alter any copyright, trademark or patent notice in the Distributable Code;
-      2.) use CriticalArc’s trademarks in Your applications’ names or in a way that suggests Your applications come from
+     1.) alter any copyright, trademark or patent notice in the Distributable Code;
+     2.) use CriticalArc’s trademarks in Your applications’ names or in a way that suggests Your applications come from
          or are endorsed by CriticalArc;
-      3.) include Distributable Code in malicious, deceptive or unlawful applications; or
-      4.) modify, distribute or convey any Distributable Code so that the Distributable Code or any application to which
+     3.) include Distributable Code in malicious, deceptive or unlawful applications; or
+     4.) modify, distribute or convey any Distributable Code so that the Distributable Code or any application to which
          it links, or of which it is a part, becomes subject to an Excluded License. An Excluded License is one that
          requires, as a condition of license, use, modification, distribution or conveyance, that
-       a) the code be disclosed or distributed in source code form;
-       b) others have the right to modify or create derivative works of it; and/or
-       c) it becomes redistributable at no charge.
+      a) the code be disclosed or distributed in source code form;
+      b) others have the right to modify or create derivative works of it; and/or
+      c) it becomes redistributable at no charge.
 4.  BETA-RELEASE PREVIEWS. The following additional terms apply to any SDK where it may be offered by CriticalArc as
     part of a Beta-Release Preview program
 a.  PRE-RELEASE VERSION. This SDK is a pre-release version. It may not operate correctly or work the way a final
