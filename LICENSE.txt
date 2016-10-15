@@ -1,93 +1,150 @@
-The CriticalArc SDK is released under the following license:
- 
-	Copyright (c) 2016 CRITICALARC Pty Ltd (ABN 69 154 820 603)
+CriticalArc SDK License Agreement
 
-	SDK LICENSE
+Last Update: October 2016
 
-	NOTICE TO USER:  CriticalArc Pty Ltd is providing the Software and Documentation for use under the terms of	this
-	Agreement. Any use, reproduction, modification or distribution of the Software or Documentation, or any derivatives
-	or portions hereof, constitutes your acceptance of this Agreement.
-	
-	As used in this Agreement, "CriticalArc" means CriticalArc Pty Ltd. "Software" means the software code accompanying
-	this agreement. "Documentation" means the documents, specifications and all other items accompanying this Agreement
-	other than the Software. 
+CRITICALARC LICENSE TERMS
 
-	1. LICENSE GRANT
-	
-	Subject to the terms of this Agreement, CriticalArc hereby grants you a non-exclusive, worldwide, royalty free
-	license to use, reproduce, prepare derivative works from, publicly display, publicly perform, distribute and
-	sublicense the Software for any purpose, provided the copyright notice below appears in a conspicuous location
-	within the source code of the distributed Software and this license is distributed in the supporting documentation
-	of the Software you distribute. Furthermore, you must comply with all third party licenses in order to use the
-	third party software contained in the Software.
+CRITICALARC SOFTWARE DEVELOPMENT KIT (SDK)
 
-	Subject to the terms of this Agreement, CriticalArc hereby grants you a non-exclusive, worldwide, royalty free
-	license to use, reproduce, publicly display, publicly perform, distribute and sublicense the Documentation for any
-	purpose. You may not modify the Documentation.
+These license terms are between You ("You") and CriticalArc Pty Ltd ("CriticalArc") regarding Your use of the
+CriticalArc Software Development Kit and any associated documentation, software code or other materials made available
+by CriticalArc (collectively referred to in this agreement as the "SDK"). The terms also apply to documentation for the
+SDK and any software code provided by CriticalArc in conjunction with such documentation. The SDK is made available by
+CriticalArc to assist developers in integrating certain functionality of CriticalArc’s Services, known as "SafeZone".
+This license applies to any SDK that includes, displays or links to this license, and to any updates, supplements or
+support services for this SDK, unless other terms accompany those items. If so, those other terms apply.
 
-	No title to the intellectual property in the Software or Documentation is transferred to you under the terms of
-	this Agreement. You do not acquire any rights to the Software or the Documentation except as expressly set forth in
-	this Agreement.
+BY INSTALLING, ACCESSING OR OTHERWISE USING THE SDK, YOU ACCEPT THE TERMS OF THIS LICENSE AGREEMENT AND CONSENT TO THE
+TRANSMISSION OF CERTAIN COMPUTER INFORMATION DURING USE AND FOR INTERNET-BASED SERVICES. IF YOU DO NOT AGREE TO THE
+TERMS OF THIS LICENSE AGREEMENT, DO NOT INSTALL, ACCESS OR USE THE SDK.
 
-	If you choose to distribute the Software in a commercial product, you do so with the understanding that you agree
-	to defend, indemnify and hold harmless CriticalArc and its suppliers against any losses, damages and costs arising
-	from the claims, lawsuits or other legal actions arising out of such distribution. You may distribute the Software
-	in object code form under your own license, provided that your license agreement:
+If You comply with these license terms, you have the rights below.
 
-	a)	complies with the terms and conditions of this license agreement; 
+INSTALLATION AND USE RIGHTS.
 
-	b)	effectively disclaims all warranties and conditions, express or implied, on behalf of CriticalArc;
+1.  Installation and Use. You may install and use any number of copies of the SDK on your devices to design, develop
+    and test your programs. Each copy must be complete, including all copyright and trademark notices. You must require
+    end users to agree to terms of use that protect the SDK as much as these License terms.
+2.  Subject to Your compliance with this license, You may use the SDK solely for the purpose of creating
+    "Authorized Applications" which for the purpose of this license are applications, such as (a) web or client-based
+    application, in object code form, or (b) those portions of your gateway server ("server interfaces"), that are
+    designed to provide access to the CriticalArc Services, and that (i) You make available for download (e.g., via
+    Your website or an application store), (ii) You make accessible through Your web interface or service, or (iii) You
+    pre-install and embed on your device(s). You are not authorized to pre-install or embed applications created using
+    this SDK on third-party devices. You may reproduce the SDK, provided that You reproduce only complete copies,
+    including without limitation all "read me" files, copyright notices, and other legal notices and terms that
+    CriticalArc has included in the SDK, and provided that You may not distribute any copy You make of the SDK.
+3.  DISTRIBUTABLE CODE. Unless otherwise provided, if the SDK contains other CriticalArc programs, these license terms
+    apply to your use of those programs. The SDK contains code in source and object form that you are permitted to
+    include in Authorized Applications if You comply with the terms below.
+    a. Right to Use and Distribute. The code and text files listed below are "Distributable Code."
+     1.) Sample Code. You may modify, copy, and distribute the source code form of code marked as "sample" in the SDK.
+     2.) Redistribution. You may permit distributors of Your Authorized Applications to copy and distribute the
+         Distributable Code as part of those applications.
+    b. Distribution Requirements. For any Distributable Code that You distribute, You must
+     1.) require distributors and external end users to agree to terms that protect it at least as much as this license;
+         and
+     2.) indemnify, defend, and hold harmless CriticalArc from any claims, including attorneys’ fees, related to the
+         distribution or use of Your Authorized Applications.
+    c. Distribution Restrictions. You may not
+     1.) alter any copyright, trademark or patent notice in the Distributable Code;
+     2.) use CriticalArc’s trademarks in Your applications’ names or in a way that suggests Your applications come from
+         or are endorsed by CriticalArc;
+     3.) include Distributable Code in malicious, deceptive or unlawful applications; or
+     4.) modify, distribute or convey any Distributable Code so that the Distributable Code or any application to which
+         it links, or of which it is a part, becomes subject to an Excluded License. An Excluded License is one that
+         requires, as a condition of license, use, modification, distribution or conveyance, that
+      a) the code be disclosed or distributed in source code form;
+      b) others have the right to modify or create derivative works of it; and/or
+      c) it becomes redistributable at no charge.
+4.  BETA-RELEASE PREVIEWS. The following additional terms apply to any SDK where it may be offered by CriticalArc as
+    part of a Beta-Release Preview program
+    a.  PRE-RELEASE VERSION. This SDK is a pre-release version. It may not operate correctly or work the way a final
+        version of the SDK will. CriticalArc may change it for the final, commercial version. We also may not release a
+        commercial version. IF YOU DECIDE TO MAKE USE OF ANY OF THE RIGHTS UNDER THIS LICENSE YOU AGREE THAT IT IS AT YOUR
+        SOLE DISCRETION AND YOU ASSUME ALL RESPONSIBILITY FOR AND RISK OF ANY AND ALL DAMAGES THAT MAY RESULT FROM OR IN
+        CONNECTION WITH THE SDK, INCLUDING WITHOUT LIMITATION, THE UNAVAILABILITY OR INTERRUPTION OF OPERATIONS OR THE LOSS
+        OF ANY DATA OR OTHER CONTENT.
+    b.  Development and Testing Use. If you comply with the rest of these license terms, you may use the SDK to design,
+        develop and test Authorized Applications. You may not distribute the Authorized Application or any Distributable
+        Code in a live production environment unless expressly permitted by CriticalArc.
+5.  INTERNET-BASED SERVICES. CriticalArc provides Internet-based services with the SDK. It may change or cancel them at
+    any time. You may not use this SDK or the CriticalArc Services in any way that could harm the CriticalArc Services
+    or impair anyone else’s use of it. You may not use the SDK or the CriticalArc Service to try to gain unauthorized
+    access to any service, data, account or network by any means. Some SDK features connect to CriticalArc computer
+    systems over the Internet. In some cases, you will not receive a separate notice when they connect. By using this
+    SDK, you consent to the transmission of this information.
+6.  ICON LICENSE. Subject to Your compliance with the terms of this license, CriticalArc grants You a non-exclusive,
+    non-transferable, worldwide, revocable right to use the icons identified in the SDK documentation. All rights not
+    expressly granted herein are reserved by CriticalArc. The right to use the Icons as granted herein in no way
+    implies or grants You any rights to distribute any CriticalArc products or other intellectual property.
+a.  No Sublicensing. You are granted no sublicense right and shall not purport to permit any third party to use the
+    Icons in any manner without CriticalArc’s prior written consent.
+b.  No Use for Merchandising. Your right to use the Icons in connection with Authorized Applications shall not extend
+    to the merchandising or sale of related or promotional products under the Icons.
+c.  Prohibited Activities. You shall not use the Icons in connection with any activity that (a) disparages CriticalArc
+    or its products or services; (b) violates or infringes any intellectual property of CriticalArc; or (c) violates
+    any local, state, federal, country, or international regulation or law.
+7.  SCOPE OF LICENSES. The SDK is licensed, not sold. This license only gives You some rights to use the SDK.
+    CriticalArc reserves all other rights. Unless applicable law gives You more rights despite this limitation, You may
+    use the SDK only as expressly permitted in this license. In doing so, You must comply with any technical
+    limitations in the SDK that only allow You to use it in certain ways. You may not:
+    a. work around any technical limitations in the SDK;
+    b. reverse engineer, decompile or disassemble the SDK, except and only to the extent that applicable law expressly
+       permits, despite this limitation;
+    c. make more copies of the SDK than specified in this license or allowed by, except and only to the extent
+       applicable law expressly permits, despite this limitation; or
+    d. publish the SDK for others to copy.
+8.  USE OF THE SERVICES. Your use of the CriticalArc Services, and the use of the CriticalArc Services by anyone
+    hosting or using your Authorized Application, is governed by the then-current SafeZone Security System Agreement
+    (SSSA). If any SDK for which You are granted rights hereunder makes use of the CriticalArc Services (as governed
+    by the applicable SSSA), then those SDK rights are granted subject to your compliance with the applicable SSSA.
+9.  SUPPORT. CriticalArc is not obligated to provide any technical or other support ("Support Services") for the SDK or
+    CriticalArc Services to You. However, if CriticalArc chooses to provide any Support Services to You, Your use of
+    such Support Services will be governed by then-current CriticalArc policies. With respect to any technical or other
+    information You provide to CriticalArc in connection with the Support Services, You agree that CriticalArc has an
+    unrestricted right to use such information for its business purposes, including for product support and
+    development. CriticalArc will not use such information in a form that personally identifies You.
+10. TERMINATION. CriticalArc reserves the right to discontinue offering the SDK and CriticalArc Services or to modify
+    the SDK or CriticalArc Services at any time in its sole discretion. If You are dissatisfied with any aspect of the
+    SDK or CriticalArc Services at any time, Your sole and exclusive remedy is to cease using them. Notwithstanding
+    anything contained in the license to the contrary, CriticalArc may also, in its sole discretion, terminate or
+    suspend access to the SDK and CriticalArc Services to You or any end user at any time. You acknowledge that
+    termination and/or monetary damages may not be a sufficient remedy if You breach this license and that CriticalArc
+    will be entitled, without waiving any other rights or remedies, to injunctive or equitable relief as may be deemed
+    proper by a court of competent jurisdiction in the event of a breach. This Section and Sections 10, 11, 13, 14, 15
+    and 16 will survive termination of this license or any discontinuation of the offering of the SDK or CriticalArc
+    Services, along with any other provisions that would reasonably be deemed to survive such events.
+11. RESERVATION OF RIGHTS. Except for the licenses expressly granted under this license, CriticalArc and its suppliers
+    retain all right, title and interest in and to the SDK, CriticalArc Services, and all intellectual property rights
+    therein. You are not authorized to alter, modify, copy, edit, format, create derivative works of or otherwise use
+    any materials, content or technology provided under this license except as explicitly provided in this license or
+    approved in advance in writing by CriticalArc.
+12. MODIFICATIONS; NOTICES. If we change this contract, then we will give you notice before the change is in force. If
+    you do not agree to these changes, then you must cancel and stop using the SDK, CriticalArc Services before the
+    changes are in force. If you do not stop using the SDK, CriticalArc Services, then your use of the SDK, CriticalArc
+    Services will continue under the changed contract. CriticalArc may give notices to You, at CriticalArc's option, by
+    electronic mail to any e-mail address provided by You to CriticalArc.
+13. ENTIRE AGREEMENT. This license and the SafeZone Security System Agreement (SSSA), are the entire agreement with
+    respect to the SDK and the CriticalArc Services.
+14. APPLICABLE LAW. This Agreement shall be governed by and interpreted in accordance with the laws of the State of
+    New South Wales (Australia).
+15. LEGAL EFFECT. This agreement describes certain legal rights. You may have other rights under the laws of Your
+    country. This agreement does not change Your rights under the laws of Your country if the laws of Your country do
+    not permit it to do so.
+16. DISCLAIMER OF WARRANTY. The SDK is licensed "as-is." You bear the risk of using it. CriticalArc gives no express or
+    implied warranties, guarantees or conditions. You may have additional consumer rights under Your local laws which
+    this agreement cannot change. To the extent permitted under Your local laws, CriticalArc excludes the implied
+    warranties of merchantability, fitness for a particular purpose and non-infringement. 
+17. LIMITATION ON AND EXCLUSION OF REMEDIES AND DAMAGES. You can recover from CriticalArc and its suppliers only direct
+    damages up to U.S. $5.00. You cannot recover any other damages, including consequential, lost profits, special,
+    indirect or incidental damages. 
+    This limitation applies to 
+    a. anything related to the SDK, CriticalArc Services, content (including code) on third party Internet sites, or
+       third party programs; and 
+    b. claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or
+       other tort to the extent permitted by applicable law. 
+    It applies even if CriticalArc knew or should have known about the possibility of the damages. The above limitation
+    or exclusion may not apply to You because Your country may not allow the exclusion or limitation of incidental,
+    consequential or other damages. 
 
-	c)	effectively excludes all liability for damages on behalf of CriticalArc;
-
-	d)	states that any provisions that differ from this Agreement are offered by you alone and not CriticalArc; and
-
-	e)	states that the Software is available from you or CriticalArc and informs licensees how to obtain it in a
-	reasonable manner on or through a medium customarily used for software exchange. 
-
-	2. DISCLAIMER OF WARRANTY
-	
-	CRITICALARC LICENSES THE SOFTWARE AND DOCUMENTATION TO YOU ONLY ON AN "AS IS" BASIS WITHOUT WARRANTIES OR
-	CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY WARRANTIES OR CONDITIONS
-	OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  CRITICALARC MAKES NO WARRANTY
-	THAT THE SOFTWARE OR DOCUMENTATION WILL BE ERROR-FREE. 
-	Each user of the Software or Documentation is solely responsible for determining the appropriateness of using and
-	distributing the Software and Documentation and assumes all risks associated with its exercise of rights under this
-	Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws,
-	damage to or loss of data, programs, or equipment, and unavailability or interruption of operations. Use of the
-	Software and Documentation is made with the understanding that CriticalArc will not provide you with any technical
-	or customer support or maintenance. Some states or jurisdictions do not allow the exclusion of implied warranties
-	or limitations on how long an implied warranty may last, so the above limitations may not apply to you. To the
-	extent permissible, any implied warranties are limited to ninety (90) days.
-
-	3. LIMITATION OF LIABILITY
-	
-	CRITICALARC AND ITS SUPPLIERS SHALL NOT BE LIABLE FOR LOSS OR DAMAGE ARISING OUT OF THIS AGREEMENT OR FROM THE USE
-	OF THE SOFTWARE OR DOCUMENTATION. IN NO EVENT WILL  CRITICALARC OR ITS SUPPLIERS BE LIABLE TO YOU OR ANY THIRD
-	PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, INCIDENTAL, OR SPECIAL DAMAGES INCLUDING LOST PROFITS, LOST SAVINGS,
-	COSTS, FEES, OR EXPENSES OF ANY KIND ARISING OUT OF ANY PROVISION OF THIS AGREEMENT OR THE USE OR THE INABILITY TO
-	USE THE SOFTWARE OR DOCUMENTATION, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-	LIABILITY OR TORT INCLUDING NEGLIGENCE OR OTHERWISE), EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-	CRITICALARC'S AGGREGATE LIABILITY AND THAT OF ITS SUPPLIERS UNDER OR IN CONNECTION WITH THIS AGREEMENT SHALL BE
-	LIMITED TO THE AMOUNT PAID BY YOU FOR THE SOFTWARE AND DOCUMENTATION. 
-
-	4. TRADEMARK USAGE
-	
-	CriticalArc and SafeZone are trademarks of CriticalArc Pty Ltd in Australia, the United States and other countries.
-	Such trademarks may not be used to endorse or promote any product unless expressly permitted under separate
-	agreement with CriticalArc. 
-
-	5. TERM
-	
-	Your rights under this Agreement shall terminate if you fail to comply with any of the material terms or conditions
-	of this Agreement and do not cure such failure in a reasonable period of time after becoming aware of such
-	noncompliance. If all your rights under this Agreement terminate, you agree to cease use and distribution of the
-	Software and Documentation as soon as reasonably practicable. 
-
-	6. GOVERNING LAW AND JURISDICTION
-	
-	This Agreement is governed by the statutes and laws of the State of New South Wales, Australia, without regard to
-	the conflicts of law principles thereof. If any part of this Agreement is found void and unenforceable, it will not
-	affect the validity of the balance of the Agreement, which shall remain valid and enforceable according to its
-	terms. Any dispute arising out of or related to this Agreement shall be brought in the courts of New South Wales,
-	Australia.
