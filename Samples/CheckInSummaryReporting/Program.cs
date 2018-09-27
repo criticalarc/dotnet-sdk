@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
-using CriticalArc.Messaging.Protocols.SafeZone;
-using CriticalArc.Messaging.Protocols.SafeZone.CheckIns;
-using CriticalArc.Messaging.Protocols.SafeZone.Users;
+using CriticalArc.Collections.Generic;
+using CriticalArc.Messaging;
+using CriticalArc.Messaging.Modules.Tags.Protocol;
+using CriticalArc.Messaging.Stanzas;
 using CriticalArc.SafeZone;
-using Intrinsic.Collections.Generic;
-using Intrinsic.Messaging;
-using Intrinsic.Messaging.Protocols.Tags;
-using Intrinsic.Messaging.Stanzas;
-using Intrinsic.Threading.Tasks;
+using CriticalArc.SafeZone.CheckIns.Protocol;
+using CriticalArc.SafeZone.Core.Protocol;
+using CriticalArc.SafeZone.Core.Service;
+using CriticalArc.SafeZone.Users.Service;
+using CriticalArc.Threading.Tasks;
 
 namespace CheckInSummaryReporting
 {
@@ -45,7 +46,7 @@ namespace CheckInSummaryReporting
                         ConcurrentDictionary<string, string> regionNames = new ConcurrentDictionary<string, string>();
                         ConcurrentDictionary<XId, string> userNames = new ConcurrentDictionary<XId, string>();
 
-                        var results = await client.RetrieveCheckInSessionsAsync(sessionsQuery, MaxResultsPerPage, AsyncOptions.None);
+                        var results = await client.CheckInClient.GetSessionsAsync(sessionsQuery, MaxResultsPerPage, AsyncOptions.None);
 
                         await results.ForEachPageAsync(async page =>
                             {
@@ -55,7 +56,7 @@ namespace CheckInSummaryReporting
                                     {
                                         try
                                         {
-                                            var region = await client.RetrieveRegionAsync(SafeZoneId, session.RegionId, AsyncOptions.None);
+                                            var region = await client.CoreClient.GetRegionAsync(SafeZoneId, session.RegionId, AsyncOptions.None);
                                             regionNames[session.RegionId] = regionName = XSafeZoneRegionFields.DisplayName.GetValueOrDefault(region) ?? region.Id;
                                         }
                                         catch (XStanzaErrorException)
@@ -68,7 +69,7 @@ namespace CheckInSummaryReporting
                                     {
                                         try
                                         {
-                                            var user = await client.RetrieveUserAsync(SafeZoneId, session.UserId, AsyncOptions.None);
+                                            var user = await client.UserClient.GetUserAsync(SafeZoneId, session.UserId, AsyncOptions.None);
                                             string givenName = XSafeZoneCheckInFields.GivenName.GetValueOrDefault(user);
                                             string familyName = XSafeZoneCheckInFields.FamilyName.GetValueOrDefault(user);
                                             userNames[session.UserId] = userName = $"{givenName} {familyName}";

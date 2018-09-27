@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using CriticalArc.Messaging.Protocols.SafeZone.Alerts;
-using Intrinsic.Reactive.Subjects;
+using CriticalArc.Reactive.Subjects;
+using CriticalArc.SafeZone.Alerts.Protocol;
 
 namespace AlertSynchronization
 {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using CriticalArc.Messaging.Protocols.SafeZone.Alerts;
+using CriticalArc.SafeZone.Alerts.Service;
+using CriticalArc.Reactive.Threading.Tasks;
 using CriticalArc.SafeZone;
-using Intrinsic.Reactive.Threading.Tasks;
-using Intrinsic.Threading.Tasks;
+using CriticalArc.Threading.Tasks;
 using NLog;
 
 namespace AlertSynchronization
@@ -57,10 +57,10 @@ namespace AlertSynchronization
                             switch (req.NewState)
                             {
                                 case AlertState.Acknowledge:
-                                    await client.AcknowledgeAlertAsync(req.SafeZoneId, req.RaiserId, req.AlertId, asyncOptions);
+                                    await client.AlertClient.AcknowledgeAlertAsync(req.SafeZoneId, req.RaiserId, req.AlertId, asyncOptions);
                                     break;
                                 case AlertState.Resolve:
-                                    await client.ResolveAlertAsync(req.SafeZoneId, req.RaiserId, req.AlertId, asyncOptions);
+                                    await client.AlertClient.ResolveAlertAsync(req.SafeZoneId, req.RaiserId, req.AlertId, null, null, asyncOptions);
                                     break;
                             }
                         }

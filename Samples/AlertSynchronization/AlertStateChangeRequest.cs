@@ -1,4 +1,4 @@
-﻿using Intrinsic.Messaging;
+﻿using CriticalArc.Messaging;
 
 namespace AlertSynchronization
 {

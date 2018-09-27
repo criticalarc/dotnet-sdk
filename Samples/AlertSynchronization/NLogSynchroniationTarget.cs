@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using CriticalArc.Messaging.Protocols.SafeZone.Alerts;
+using CriticalArc.SafeZone.Alerts.Protocol;
 using NLog;
 
 namespace AlertSynchronization
