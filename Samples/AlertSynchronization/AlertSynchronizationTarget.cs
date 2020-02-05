@@ -7,7 +7,8 @@ namespace AlertSynchronization
 {
     public abstract class AlertSynchronizationTarget
     {
-        private readonly WeakSubject<AlertStateChangeRequest> _alertStateChangeRequested = new WeakSubject<AlertStateChangeRequest>();
+        private readonly WeakSubject<AlertStateChangeRequest> _alertStateChangeRequested =
+            new WeakSubject<AlertStateChangeRequest>();
 
         /// <summary>
         ///     Subscribed to by AlertSynchronizer to action alert state change requests.

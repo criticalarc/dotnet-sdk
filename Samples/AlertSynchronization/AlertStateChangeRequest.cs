@@ -4,7 +4,7 @@ namespace AlertSynchronization
 {
     public class AlertStateChangeRequest
     {
-        public AlertStateChangeRequest(XId safeZoneId, XId raiserId, string alertId, AlertState newState)
+        public AlertStateChangeRequest(XServerId safeZoneId, XAccountId raiserId, XStringId alertId, AlertState newState)
         {
             SafeZoneId = safeZoneId;
             RaiserId = raiserId;
@@ -12,9 +12,9 @@ namespace AlertSynchronization
             NewState = newState;
         }
 
-        public XId SafeZoneId { get; }
-        public XId RaiserId { get; }
-        public string AlertId { get; }
+        public XServerId SafeZoneId { get; }
+        public XAccountId RaiserId { get; }
+        public XStringId AlertId { get; }
         public AlertState NewState { get; }
     }
 }
