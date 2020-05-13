@@ -19,10 +19,7 @@ namespace AlertSynchronization
         ///     Call this method to request a state change for a given alert.
         /// </summary>
         /// <param name="request">The request parameters.</param>
-        protected void OnAlertStateChangeRequested(AlertStateChangeRequest request)
-        {
-            _alertStateChangeRequested.OnNext(request);
-        }
+        protected void OnAlertStateChangeRequested(AlertStateChangeRequest request) => _alertStateChangeRequested.OnNext(request);
 
         /// <summary>
         ///     Called when an alert has been added or updated in SafeZone.
