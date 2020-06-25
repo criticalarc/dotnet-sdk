@@ -2,7 +2,7 @@
 using CriticalArc;
 using CriticalArc.SafeZone;
 
-namespace CheckInLocationStreaming
+namespace CheckInEventStreaming
 {
     internal class Program
     {
