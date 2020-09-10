@@ -7,6 +7,7 @@ using CriticalArc.Messaging.Modules.Tags.Protocol;
 using CriticalArc.Messaging.Stanzas;
 using CriticalArc.SafeZone;
 using CriticalArc.SafeZone.CheckIns.Protocol;
+using CriticalArc.SafeZone.CheckIns.Service;
 using CriticalArc.SafeZone.Core.Protocol;
 using CriticalArc.SafeZone.Core.Service;
 using CriticalArc.SafeZone.Users.Service;
@@ -25,26 +26,19 @@ namespace CheckInSummaryReporting
 
         private static async Task Main(string[] args)
         {
-            var sessionsQuery = new XSafeZoneCheckInSessions
-            {
-                SafeZoneId = SafeZoneId,
-                StartTimestamp = ReportStartTime,
-                EndTimestamp = ReportEndTime,
-                Tags = new XTags
-                {
-                    // report on check-ins for every region
-                    XTag.Build.RegionTag(string.Empty)
-                }
-            };
-
             using var client = new SafeZoneClient(new SafeZoneClientSettings(UserName, Password));
             
             client.Connect();
 
+            var tags = new XTags
+            {
+                // report on check-ins for every region
+                XTag.Build.RegionTag(string.Empty)
+            };
             var regionNames = new ConcurrentDictionary<XStringId, string>();
             var userNames = new ConcurrentDictionary<XAccountId, string>();
 
-            var results = await client.CheckInClient.GetSessionsAsync(sessionsQuery, MaxResultsPerPage, AsyncOptions.None);
+            var results = client.CheckInClient.GetSessions(SafeZoneId, ReportStartTime, ReportEndTime, tags, MaxResultsPerPage);
 
             await results.ForEachPageAsync(async page =>
                 {
@@ -55,7 +49,7 @@ namespace CheckInSummaryReporting
                             try
                             {
                                 var region = await client.CoreClient.GetRegionAsync(SafeZoneId, session.RegionId, AsyncOptions.None);
-                                regionNames[session.RegionId] = regionName = XSafeZoneRegionFields.DisplayName.GetValueOrDefault(region) ?? (string) region.Id;
+                                regionNames[session.RegionId] = regionName = region.DisplayNameOrId;
                             }
                             catch (XStanzaErrorException)
                             {
@@ -68,9 +62,7 @@ namespace CheckInSummaryReporting
                             try
                             {
                                 var user = await client.UserClient.GetUserAsync(SafeZoneId, session.UserId, AsyncOptions.None);
-                                var givenName = XSafeZoneCheckInFields.GivenName.GetValueOrDefault(user);
-                                var familyName = XSafeZoneCheckInFields.FamilyName.GetValueOrDefault(user);
-                                userNames[session.UserId] = userName = $"{givenName} {familyName}";
+                                userNames[session.UserId] = userName = user.Fields.DisplayName ?? user.Fields.GivenFamilyName;
                             }
                             catch (XStanzaErrorException)
                             {

@@ -13,6 +13,6 @@
         </None>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="CriticalArc.Sdk" Version="3.112.0" />
+        <PackageReference Include="CriticalArc.Sdk" Version="3.117.1" />
     </ItemGroup>
 </Project>
